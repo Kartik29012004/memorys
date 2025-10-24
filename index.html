@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Memories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Memories</h1>
+    </header>
+
+    <div id="gallery" class="gallery">
+        <div class="empty-state">
+            <span class="emoji">📸</span>
+            <p>No memories yet</p>
+            <p style="font-size: 1rem; opacity: 0.9;">Upload your first photo to get started!</p>
+        </div>
+    </div>
+
+    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+        📷 Upload Memory
+    </button>
+
+    <input type="file" id="fileInput" accept="image/*" multiple>
+
+    <script src="script.js"></script>
+</body>
+</html>
