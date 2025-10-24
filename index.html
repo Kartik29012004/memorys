@@ -26,6 +26,18 @@
 
     <input type="file" id="fileInput" accept="image/*" multiple>
 
+    <!-- Modal for adding text -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Add a caption to your memory</h2>
+            <input type="text" id="captionInput" placeholder="Enter a caption or description..." maxlength="100">
+            <div class="modal-buttons">
+                <button class="btn-cancel" onclick="cancelUpload()">Cancel</button>
+                <button class="btn-save" onclick="saveMemory()">Save Memory</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
